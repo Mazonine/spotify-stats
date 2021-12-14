@@ -1,0 +1,33 @@
+.filler {
+    flex: 1 1 auto;
+  }
+  
+  .gap {
+    margin-right: 10px;
+  }
+  
+  .navbar {
+    position: relative;
+    top: 0;
+  }
+  
+  :host {
+    box-sizing: border-box;
+    display: block;
+    height: calc(100% - 120px);
+  }
+  
+  #wrapper {
+    min-height: calc(100% - 120px);
+    height: calc(100% - 120px);
+    box-sizing: border-box; /*new*/
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .header {
+    font-weight: bold;
+  }
+  

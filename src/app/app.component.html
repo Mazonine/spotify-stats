@@ -1,0 +1,74 @@
+<div style="margin:.2in; height: 100%" id="wrapper">
+  <div class="container">
+    <div class="row" style="background-color: white;">
+        <!-- <app-overview></app-overview> -->
+        <div fxFlex="10%" style="margin-right: 30px; border-bottom: 2px solid lightgrey; border-right: 2px solid lightgrey; height: 40px;">
+          <div fxFlex="80%" style="font-size: 16pt; margin-left: 5px; text-align: center; margin-top: 10px;">Spotify Stats</div>
+        </div>
+    </div>
+
+    <div class="row">
+      <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <span class="material-icons" style="font-size: 36px" matTooltip="Home" matTooltipPosition="right">home</span>
+            Home
+          </ng-template>
+          <app-home></app-home>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <span class="material-icons" style="font-size: 36px" matTooltip="Home" matTooltipPosition="right">home</span>
+            Artists
+          </ng-template>
+          <app-artists></app-artists>
+        </mat-tab>
+        
+        <!-- <mat-tab label="Home"><app-home></app-home></mat-tab> -->
+        <!-- <mat-tab label="Instructors"><app-instructors></app-instructors></mat-tab>
+        <mat-tab label="Classes"><app-classes></app-classes></mat-tab>
+        <mat-tab label="Workouts"><app-workouts></app-workouts></mat-tab>
+        <mat-tab label="Analytics"><app-analytics></app-analytics></mat-tab> -->
+      </mat-tab-group>
+    </div>
+
+    <!-- <div class="row">
+      <div class="column" fxFlex="2%" style="margin-right: 10px;">
+        <div class="row" style="margin-top: 5px; border-bottom: 2px lightgrey solid; text-align: center; width: 35px;">
+          <a mat-button (click)="navigate(TABS.HOME)" [ngStyle]="{'color': (currentButtonSelected === TABS.HOME) ? 'yellow' : 'black'}" style="min-width: 0px; padding: 0;">
+            <span class="material-icons" style="font-size: 36px" matTooltip="Home" matTooltipPosition="right">home</span>
+          </a>
+        </div>
+        <!-- <div *ngIf="showInstructorsButton$ | async" class="row" style="margin-top: 5px; border-bottom: 2px lightgrey solid; text-align: center; width: 35px;">
+          <a mat-button  (click)="navigate(TABS.INSTRUCTORS)" style="min-width: 0px; padding: 0;"
+            [ngStyle]="{'color': (currentButtonSelected === TABS.INSTRUCTORS) ? 'yellow' : 'black'}">
+            <span class="material-icons" style="font-size: 36px" matTooltip="Instructors" matTooltipPosition="right">group</span></a>
+        </div>
+        <div *ngIf="showClassesButton$ | async" class="row" style="margin-top: 5px; border-bottom: 2px lightgrey solid;  text-align: center; width: 35px;">
+          <a mat-button (click)="navigate(TABS.CLASSES)" style="min-width: 0px; padding: 0;"
+            [ngStyle]="{'color': (currentButtonSelected === TABS.CLASSES) ? 'yellow' : 'black'}">
+            <span class="material-icons" style="font-size: 36px" matTooltip="Classes" matTooltipPosition="right">list</span></a>
+        </div>
+        <div *ngIf="showWorkoutsButton$ | async" class="row" style="margin-top: 5px; border-bottom: 2px lightgrey solid;  text-align: center; width: 35px;">
+          <a mat-button (click)="navigate(TABS.WORKOUTS)" style="min-width: 0px; padding: 0;"
+            [ngStyle]="{'color': (currentButtonSelected === TABS.WORKOUTS) ? 'yellow' : 'black'}">
+            <span class="material-icons" style="font-size: 36px" matTooltip="Workouts" matTooltipPosition="right">calendar_today</span></a>
+        </div>
+        <div *ngIf="showAnalyticsButton$ | async" class="row" style="margin-top: 5px;  text-align: center; width: 35px;">
+          <a mat-button (click)="navigate(TABS.ANALYTICS)" style="min-width: 0px; padding: 0;"
+            [ngStyle]="{'color': (currentButtonSelected === TABS.ANALYTICS) ? 'yellow' : 'black'}">
+            <span class="material-icons" style="font-size: 36px" matTooltip="Analytics" matTooltipPosition="right">analytics</span></a>
+        </div>
+      </div>
+      <div class="column" fxFlex="98%" style="background-color: lightgray; margin: 5px;">
+        <mat-tab-group [selectedIndex]="tabIndex$ | async" (selectedIndexChange)="onTabIndexChanged($event)" class="header-less-tabs" id="tab-group">
+          <mat-tab label="Home"><app-home></app-home></mat-tab>
+          <!-- <mat-tab label="Instructors"><app-instructors></app-instructors></mat-tab>
+          <mat-tab label="Classes"><app-classes></app-classes></mat-tab>
+          <mat-tab label="Workouts"><app-workouts></app-workouts></mat-tab>
+          <mat-tab label="Analytics"><app-analytics></app-analytics></mat-tab>
+        </mat-tab-group>
+      </div>
+    </div> -->
+  </div>
+</div>
