@@ -1,0 +1,58 @@
+.top20Artists {
+    .stat-header {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  
+    .grid-header {
+      text-decoration: underline;
+      margin-right: 10px;
+    }
+  
+    .grid-item {
+      margin-right: 10px;
+    }
+  
+    .general {
+      margin-bottom: 10px
+    }
+  
+    .newsTitle {
+      font-weight: bold;
+      border-bottom: 1px solid black;
+
+    }
+
+    .newsText {
+      font-weight: 10pt;
+    }
+
+    .card {
+      background-color: white;
+      width: calc(100% - 20px);
+      height: flex 1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+  
+      .header {
+        text-align: left;
+        padding: 10px;
+        font-size: larger;
+      }
+  
+      .body {
+        padding: 10px;
+      }
+  
+      .footer {
+        padding: 10px;
+      }
+    }
+  
+    a:link {
+      text-decoration: none;
+    }
+  }
+  

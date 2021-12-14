@@ -1,0 +1,21 @@
+<div class="top20Artists">
+    <div class="card">
+        <div class="header">Top 20 Tracks</div>
+        <div class="container body" *ngIf="top20TracksObs$ | async as top20Tracks">
+            <div *ngFor="let track of top20Tracks" style="border-bottom: lightgray solid 1px; margin-bottom: 5px;">
+                <div class="column" fxFlex="20%">
+                    <div class="row"><strong>Artist:</strong></div>
+                    <div class="row">{{track.artists[0].name}}</div>
+                </div>
+                <div class="column" fxFlex="40%">
+                    <div class="row"><strong>Track:</strong></div>
+                    <div class="row">{{ track.name}}</div>
+                </div>
+                <div class="column" fxFlex="33%">
+                    <div class="row"><strong>Album:</strong></div>
+                    <div class="row">{{track.album.name}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

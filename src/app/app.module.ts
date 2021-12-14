@@ -27,6 +27,7 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './home/components/user/user.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { Top20ArtistsComponent } from './artists/components/top20-artists/top20-artists.component';
+import { Top20TracksComponent } from './tracks/components/top20-tracks/top20-tracks.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
   disabled: true,
@@ -42,7 +43,8 @@ const globalRippleConfig: RippleGlobalOptions = {
     HomeComponent,
     UserComponent,
     ArtistsComponent,
-    Top20ArtistsComponent
+    Top20ArtistsComponent,
+    Top20TracksComponent
   ],
   imports: [
     BrowserModule,

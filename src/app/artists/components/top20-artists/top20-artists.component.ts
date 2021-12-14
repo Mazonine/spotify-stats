@@ -19,10 +19,10 @@ export class Top20ArtistsComponent implements OnInit {
     this.top20ArtistsObs$ = this.spotifyService.getTop20Artists().pipe(map(data => data['items']));
 
     const items =  this.spotifyService.getTop20Artists();
-    console.log('items', items);
+    console.log('artists', items);
     items.subscribe((data: any) => {
       for (const item of data.items) {
-        console.log(item, item.name);
+        console.log('artist', item, item.name);
       }
     });
   }

@@ -1,6 +1,6 @@
 <div class="top20Artists">
     <div class="card">
-        <div class="header">Top 20</div>
+        <div class="header">Top 20 Artists</div>
         <div class="container body" *ngIf="top20ArtistsObs$ | async as top20Artists">
             <div *ngFor="let artist of top20Artists">
                 <img src='{{ artist.images[2].url}}' height="50" width="50"> {{ artist.name}}
