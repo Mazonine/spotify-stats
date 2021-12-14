@@ -23,4 +23,8 @@ export class UserComponent implements OnInit {
     // });
   }
 
+  login() {
+    this.spotifyService.login().subscribe();
+  }
+
 }

@@ -1,6 +1,16 @@
-<div class="top20Artists">
+<div class="top20Tracks">
     <div class="card">
-        <div class="header">Top 20 Tracks</div>
+        <div class="header">
+            <div class="column" fxFlex="70%">Top 20 Tracks</div>
+            <div class="column" fxFlex="26%">
+                <mat-select style="overflow: visible"
+                        [(ngModel)]="currentTimeRange" 
+                        (selectionChange)="onTimeRangeChange($event)">
+                    <mat-option *ngFor="let term of terms" [value]="term.value">
+                        {{term.text}}</mat-option>
+                </mat-select>
+            </div>
+        </div>
         <div class="container body" *ngIf="top20TracksObs$ | async as top20Tracks">
             <div *ngFor="let track of top20Tracks" style="border-bottom: lightgray solid 1px; margin-bottom: 5px;">
                 <div class="column" fxFlex="20%">
